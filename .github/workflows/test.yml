@@ -528,7 +528,7 @@ jobs:
         with:
           external_repository: amithmahi/playwrightworking
           publish_branch: main
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{steps.download.outputs.download-path}}
           keep_files: true
           user_name: "github-actions[bot]"
